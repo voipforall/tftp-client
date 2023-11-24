@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/voipforall/tftp-client/assets/30990097/558b85e8-538d-4251-9055-513bd3fe2b87">
+<img src="https://github.com/voipforall/tftp-client/assets/30990097/cd0f5703-190d-4ab3-bf7d-21bce29fbf67">
 </p>
 
 # TFTP Client for Laravel
