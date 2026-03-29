@@ -144,14 +144,17 @@ class TFTPClient
      */
     private function sendFileContent(string $content): void
     {
-        $blocks = str_split($content, ByteLimitEnum::DATA->value);
+        // Empty file: send a single empty DATA block per RFC 1350
+        if ($content === '') {
+            $this->sendDataPacket(1, '');
+            $this->receiveAck();
 
-        // Handle empty file: send a single empty DATA block per RFC 1350
-        if ($blocks === ['' => ''] || $blocks === false) {
-            $blocks = [''];
+            return;
         }
 
+        $blocks = str_split($content, ByteLimitEnum::DATA->value);
         $blockNumber = 1;
+
         foreach ($blocks as $block) {
             $this->sendDataPacket($blockNumber, $block);
             $this->receiveAck();
