@@ -20,8 +20,8 @@ composer require voipforall/tftp-client
 ```
 
 ## Requirements
-- PHP ^8.1 (with ext-sockets enabled)
-- Laravel 10.x, 11.x, 12.x or 13.x
+- PHP ^8.2 (with ext-sockets enabled)
+- Laravel 10.x, 11.x or 12.x
 
 ## Quick start
 Configure in your `.env` file the following entries 
@@ -138,10 +138,9 @@ If you want to log all TFTP operations just set the `TFTP_LOGGING` to `true` in 
 
 | Laravel | PHP           | Testbench |
 |---------|---------------|-----------|
-| 10.x    | 8.1, 8.2, 8.3 | ^8.0      |
+| 10.x    | 8.2, 8.3      | ^8.0      |
 | 11.x    | 8.2, 8.3, 8.4 | ^9.0      |
 | 12.x    | 8.2, 8.3, 8.4 | ^10.0     |
-| 13.x    | 8.3, 8.4      | ^11.0     |
 
 ### Testing
 

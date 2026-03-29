@@ -5,8 +5,8 @@ All notable changes to `tftp-client` will be documented in this file
 ## 2.0.0 - 2026-03-29
 
 ### Added
-- Support for Laravel 10, 11, 12 and 13
-- Support for PHP 8.1, 8.2, 8.3 and 8.4
+- Support for Laravel 10, 11 and 12
+- Support for PHP 8.2, 8.3 and 8.4
 - Full test suite with Pest (73 tests)
 - Socket receive timeout (5 seconds) to prevent infinite blocking
 - Socket cleanup in destructor to prevent resource leaks
@@ -26,11 +26,12 @@ All notable changes to `tftp-client` will be documented in this file
 - Simplified `Loggable` trait from 8 match arms to single `Log::log()` call
 - Separated `getServerResponse()` into `receiveData()` and `receiveAck()` for type safety
 - Updated CI workflow with proper matrix for all supported PHP/Laravel combinations
-- Minimum PHP version remains 8.1
+- Minimum PHP version bumped to 8.2 (Pest 2 dependency requires it)
 
 ### Breaking
 - Dropped Laravel 8 and 9 support
-- Requires `illuminate/support` ^10.0|^11.0|^12.0|^13.0
+- Requires PHP ^8.2 (was ^8.1)
+- Requires `illuminate/support` ^10.0|^11.0|^12.0
 
 ## 1.0.0 - 2023-11-25
 

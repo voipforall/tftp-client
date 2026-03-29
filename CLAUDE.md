@@ -8,8 +8,8 @@ A PHP TFTP Client library for Laravel, compliant with RFC 1350. Uses PHP's `ext-
 
 ## Requirements
 
-- PHP ^8.1 with `ext-sockets`
-- Laravel 10.x
+- PHP ^8.2 with `ext-sockets`
+- Laravel 10.x, 11.x or 12.x
 
 ## Commands
 
